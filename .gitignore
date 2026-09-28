@@ -2,7 +2,7 @@
 # 1. SECRETS & ENVIRONMENT VARIABLES (CRITICAL)
 # ==========================================
 # Never commit your actual credentials or API keys.
-.env
+
 .env.local
 .env.development.local
 .env.test.local
