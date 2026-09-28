@@ -1,0 +1,73 @@
+# ==========================================
+# 1. SECRETS & ENVIRONMENT VARIABLES (CRITICAL)
+# ==========================================
+# Never commit your actual credentials or API keys.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.cert
+
+# CRITICAL: Do NOT ignore the template file! 
+# Your teammates need this to see what variables to configure.
+!.env.example
+
+# ==========================================
+# 2. PACKAGE DEPENDENCIES
+# ==========================================
+# Re-downloaded via npm, pip, maven, etc. Do not commit.
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Java / Kotlin
+.gradle/
+build/
+target/
+*.class
+
+# Go
+/vendor/
+
+# ==========================================
+# 3. BUILD ARTIFACTS & COMPILED CODE
+# ==========================================
+dist/
+out/
+bin/
+obj/
+*.exe
+*.dll
+*.so
+
+# ==========================================
+# 4. LOGS & TEMPORARY FILES
+# ==========================================
+*.log
+logs/
+tmp/
+temp/
+
+# ==========================================
+# 5. IDE, EDITORS & OS LEAKAGE
+# ==========================================
+# macOS hidden files
+.DS_Store
+Thumbs.db
+
+# Visual Studio Code & IntelliJ / WebStorm
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
